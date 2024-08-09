@@ -144,39 +144,77 @@ statement;
 
 
 
-const sub1 = parseInt(prompt('Enter marks of subject-1 out of 100'))
-const sub2 = parseInt(prompt('Enter marks of subject-2 out of 100'))
-const sub3 = parseInt(prompt('Enter marks of subject-3 out of 100'))
+// const sub1 = parseInt(prompt('Enter marks of subject-1 out of 100'))
+// const sub2 = parseInt(prompt('Enter marks of subject-2 out of 100'))
+// const sub3 = parseInt(prompt('Enter marks of subject-3 out of 100'))
 
-// Calculate the percentage
-let obtained_marks = sub1 + sub2 + sub3
-console.log(typeof sub1);
-console.log(obtained_marks);
-let percentage = (obtained_marks / 300) * 100
+// // Calculate the percentage
+// let obtained_marks = sub1 + sub2 + sub3
+// console.log(typeof sub1);
+// console.log(obtained_marks);
+// let percentage = (obtained_marks / 300) * 100
 
-// Assigning grades according to percentage
-document.write("you percentage is: " + percentage + "<br>");
+// // Assigning grades according to percentage
+// document.write("you percentage is: " + percentage + "<br>");
 
-if(percentage > 80){
-    document.write("Grade: A+");
-}else if(percentage > 70){
+// if(percentage > 80){
+//     document.write("Grade: A+");
+// }else if(percentage > 70){
     
-    document.write("Grade: A");
-}
-else if(percentage > 60){
+//     document.write("Grade: A");
+// }
+// else if(percentage > 60){
     
-    document.write("Grade: B");
-}
-else if(percentage > 50){
+//     document.write("Grade: B");
+// }
+// else if(percentage > 50){
     
-    document.write("Grade: C");
+//     document.write("Grade: C");
+// }else{
+//     document.write('Beta paper tw dedo');
+// }
+
+// nested if
+/*
+if(condition){
+
+    if(condition){
+        statement;
+    }else{
+        statement
+    }
+
 }else{
-    document.write('Beta paper tw dedo');
+    statement
+
+}
+ */
+
+
+// voting system
+// let age = 21;
+// let CNIC = "No";
+
+let CNIC = prompt("Do you hold a CNIC: Yes or No? ");
+
+if(CNIC == "Yes"){
+    
+    let age = prompt("Enter your age");
+    if(age > 18){
+        document.write("you are eligible for vote");
+    }else{
+        document.write("Bary hoky ao beta");
+    }
+
+}else{
+
+    document.write("you are not eligible for vote");
+
 }
 
 
-
-
+// loops (for, while, do while)
+// array
 
 
 
