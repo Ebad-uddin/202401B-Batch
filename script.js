@@ -195,31 +195,133 @@ if(condition){
 // let age = 21;
 // let CNIC = "No";
 
-let CNIC = prompt("Do you hold a CNIC: Yes or No? ");
+// let CNIC = prompt("Do you hold a CNIC: Yes or No? ");
 
-if(CNIC == "Yes"){
+// if(CNIC == "Yes"){
     
-    let age = prompt("Enter your age");
-    if(age > 18){
-        document.write("you are eligible for vote");
-    }else{
-        document.write("Bary hoky ao beta");
-    }
+//     let age = prompt("Enter your age");
+//     if(age > 18){
+//         document.write("you are eligible for vote");
+//     }else{
+//         document.write("Bary hoky ao beta");
+//     }
 
-}else{
+// }else{
 
-    document.write("you are not eligible for vote");
+//     document.write("you are not eligible for vote");
 
-}
+// }
 
 
 // loops (for, while, do while)
 // array
 
 
+// counting
+// when we know how much iteration will perform
+
+// for(let i = 11; i > 0; i--){
+//     console.log(i)
+//     document.write(i + "<br>");
+// }
+
+
+// we don't know how much iteration will perform
+
+// let i = 1;
+
+// while(i <= 10){
+//     document.write("Ebad uddin ahmed" + "<br>");
+//     i++;
+// }
+
+// do{
+//     document.write("<li> Ebad Uddin Ahmed </li>");
+//     i++;
+
+// }while(i <= 10)
+
+
+// Array
+              // 0       //1      //2     //3
+let names = ["Farrukh" , "Ali" , "uzair", "usama"];
+// names[4] = "aman";
+// names[5] = "Ebad";
+// console.log(names)
+// console.log(names[1])
+// console.log(names[3])
+// console.log(names[4])
+// console.log(names[5])
+
+// 2nd method to declare array
+let numbers = new Array(4);
+numbers[0] = 3
+numbers[1] = 4
+numbers[2] = 6
+numbers[3] = 6
+
+// console.log(numbers)
+
+
+// 3rd method to declare an array
+let techs = [];
+techs[0] = "laravel";
+techs[1] = ".Net";
+techs[2] = "SQL";
+techs[3] = "c#";
+// console.log(techs);
+
+// for(let i = 0; i < 4; i++){
+//     document.write(techs[i] + "<br>");
+// }
+
+
+let marks = [
+    Abdullah = [34, 54, 88, 76],    // 0
+    Ebad = [200, 100, 300, 500],    // 1
+    Taha = [20, 30 , 40, 50],            //2
+];
 
 
 
+for(let x = 0; x < 3; x++){     // outer loop
+    document.write('students Marks' + "<br>" )
+    for(let y = 0;  y < 4; y++){    // inner loop
+        document.write("<li>" + marks[x][y] + "</li>");
+    }
+}
+
+// functions 
+/*
+
+function_keyword function_name(){
+
+}
+
+*/
+
+
+
+
+
+function GetfullName(){
+document.write("Ebad Uddin Ahmed");
+}
+
+// GetfullName();
+// document.write('break point')
+// GetfullName();
+// GetfullName();
+
+
+function addition(){
+    let num1 = 3;
+    let num2 = 5;
+    let result = num1 + num2;
+    document.write(result); 
+}
+
+addition()
 
 
 
