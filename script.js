@@ -244,52 +244,52 @@ if(condition){
 
 // Array
               // 0       //1      //2     //3
-let names = ["Farrukh" , "Ali" , "uzair", "usama"];
-// names[4] = "aman";
-// names[5] = "Ebad";
-// console.log(names)
-// console.log(names[1])
-// console.log(names[3])
-// console.log(names[4])
-// console.log(names[5])
+// let names = ["Farrukh" , "Ali" , "uzair", "usama"];
+// // names[4] = "aman";
+// // names[5] = "Ebad";
+// // console.log(names)
+// // console.log(names[1])
+// // console.log(names[3])
+// // console.log(names[4])
+// // console.log(names[5])
 
-// 2nd method to declare array
-let numbers = new Array(4);
-numbers[0] = 3
-numbers[1] = 4
-numbers[2] = 6
-numbers[3] = 6
+// // 2nd method to declare array
+// let numbers = new Array(4);
+// numbers[0] = 3
+// numbers[1] = 4
+// numbers[2] = 6
+// numbers[3] = 6
 
-// console.log(numbers)
+// // console.log(numbers)
 
 
-// 3rd method to declare an array
-let techs = [];
-techs[0] = "laravel";
-techs[1] = ".Net";
-techs[2] = "SQL";
-techs[3] = "c#";
-// console.log(techs);
+// // 3rd method to declare an array
+// let techs = [];
+// techs[0] = "laravel";
+// techs[1] = ".Net";
+// techs[2] = "SQL";
+// techs[3] = "c#";
+// // console.log(techs);
 
-// for(let i = 0; i < 4; i++){
-//     document.write(techs[i] + "<br>");
+// // for(let i = 0; i < 4; i++){
+// //     document.write(techs[i] + "<br>");
+// // }
+
+
+// let marks = [
+//     Abdullah = [34, 54, 88, 76],    // 0
+//     Ebad = [200, 100, 300, 500],    // 1
+//     Taha = [20, 30 , 40, 50],            //2
+// ];
+
+
+
+// for(let x = 0; x < 3; x++){     // outer loop
+//     document.write('students Marks' + "<br>" )
+//     for(let y = 0;  y < 4; y++){    // inner loop
+//         document.write("<li>" + marks[x][y] + "</li>");
+//     }
 // }
-
-
-let marks = [
-    Abdullah = [34, 54, 88, 76],    // 0
-    Ebad = [200, 100, 300, 500],    // 1
-    Taha = [20, 30 , 40, 50],            //2
-];
-
-
-
-for(let x = 0; x < 3; x++){     // outer loop
-    document.write('students Marks' + "<br>" )
-    for(let y = 0;  y < 4; y++){    // inner loop
-        document.write("<li>" + marks[x][y] + "</li>");
-    }
-}
 
 // functions 
 /*
@@ -304,24 +304,91 @@ function_keyword function_name(){
 
 
 
-function GetfullName(){
-document.write("Ebad Uddin Ahmed");
+// function GetfullName(){
+// document.write("Ebad Uddin Ahmed");
+// }
+
+// // GetfullName();
+// // document.write('break point')
+// // GetfullName();
+// // GetfullName();
+
+
+// function addition(){
+//     let num1 = 3;
+//     let num2 = 5;
+//     let result = num1 + num2;
+//     document.write(result); 
+// }
+
+// addition()
+
+// parameterized function
+
+// function FullName(first_name, last_name){
+
+//     document.write(first_name + ' ' + last_name);
+// }
+
+// FullName('your fullname is: ' + 'qasim' , 'qaimkhani');
+
+// function addition(num1 = 1 , num2 = 1){
+//     let result = num1 + num2;
+//     document.write('Addition ' + result); 
+// }
+// document.write("<br>")
+// addition(5, 6)
+
+
+// // function with return statement
+
+// function subtraction(num1, num2){
+//     let result = num1 - num2;
+//     return result;
+// }
+// document.write("<br>")
+// let result = subtraction(5, 4);
+// document.write(result);
+
+
+
+// let names = ["Farrukh" , "Ali" , "uzair", "usama"];
+
+// console.log(names.length);
+
+// function Array_execution(names){
+//     document.write('<br> Array of names: <br>')
+//     for(let i = 0; i < names.length; i++){
+//         document.write(names[i] + "<br>");
+//     }
+// }
+
+// Array_execution(names)
+
+
+
+// objects in javascript
+
+let person_info = {
+    name : "Ebad Uddin",
+    email : "ebad@gmail.com",
+    gender : "Male",
+    address : "Johar"
+};
+
+document.write('<br> Object Execution <br>');
+
+for(let i in person_info){
+    document.write(i + ': ' + person_info[i] + "<br>")
 }
 
-// GetfullName();
-// document.write('break point')
-// GetfullName();
-// GetfullName();
 
 
-function addition(){
-    let num1 = 3;
-    let num2 = 5;
-    let result = num1 + num2;
-    document.write(result); 
-}
 
-addition()
+
+
+
+// DOM(document object model)
 
 
 
