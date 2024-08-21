@@ -369,19 +369,86 @@ function_keyword function_name(){
 
 // objects in javascript
 
-let person_info = {
-    name : "Ebad Uddin",
-    email : "ebad@gmail.com",
-    gender : "Male",
-    address : "Johar"
-};
+// let person_info = {
+//     name : "Ebad Uddin",
+//     email : "ebad@gmail.com",
+//     gender : "Male",
+//     address : "Johar",
+//     Degrees : {
+//         bachlers : "Physics",
+//         masters : "Computer science"
+//     }
+// };
 
-document.write('<br> Object Execution <br>');
 
-for(let i in person_info){
-    document.write(i + ': ' + person_info[i] + "<br>")
-}
+// document.write(person_info.Degrees.bachlers);
 
+// document.write('<br> Object Execution <br>');
+
+// for(let i in person_info){
+//     document.write(i + ': ' + person_info[i] + "<br>")
+// }
+
+let ApiData = [
+    {
+        name : "Ebad Uddin",
+            email : "ebad@gmail.com",
+            gender : "Male",
+            address : "Johar",
+    },
+    {
+        name : "Ali",
+            email : "ali@gmail.com",
+            gender : "Male",
+            address : "Gulshan",
+    }
+
+];
+
+
+// ApiData.forEach(element => {
+//     console.log(element.name);
+// })
+
+
+// saving the data into localstorage
+ApiData.forEach(element => {
+
+    // coverting object into json
+    let json_form = JSON.stringify(element);
+    console.log(json_form);
+    localStorage.setItem('personInfo' ,json_form);
+
+});
+
+// fetching data from localStorage
+let fetch_data = localStorage.getItem('personInfo');
+
+// converting json into object
+let person_obj = JSON.parse(fetch_data);
+document.write(person_obj.email);
+document.write(fetch_data)
+
+
+// save the data in local storage
+// localStorage.setItem("name", "ebad");
+// localStorage.setItem("email", "ebad@gmail.com");
+
+
+// let name = localStorage.getItem('name')
+// let email = localStorage.getItem('email')
+
+// document.write(email)
+
+
+
+
+
+// JSON (javaScript object notation)
+
+// { "name" : "ebad" , "email" : "ebad@gmail.com"}
+
+// Json Serialization
 
 
 
