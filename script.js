@@ -412,22 +412,22 @@ let ApiData = [
 
 
 // saving the data into localstorage
-ApiData.forEach(element => {
+// ApiData.forEach(element => {
 
-    // coverting object into json
-    let json_form = JSON.stringify(element);
-    console.log(json_form);
-    localStorage.setItem('personInfo' ,json_form);
+//     // coverting object into json
+//     let json_form = JSON.stringify(element);
+//     console.log(json_form);
+//     localStorage.setItem('personInfo' ,json_form);
 
-});
+// });
 
-// fetching data from localStorage
-let fetch_data = localStorage.getItem('personInfo');
+// // fetching data from localStorage
+// let fetch_data = localStorage.getItem('personInfo');
 
-// converting json into object
-let person_obj = JSON.parse(fetch_data);
-document.write(person_obj.email);
-document.write(fetch_data)
+// // converting json into object
+// let person_obj = JSON.parse(fetch_data);
+// document.write(person_obj.email);
+// document.write(fetch_data)
 
 
 // save the data in local storage
@@ -456,6 +456,8 @@ document.write(fetch_data)
 
 
 // DOM(document object model)
+
+
 
 
 
