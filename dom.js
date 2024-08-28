@@ -32,9 +32,7 @@ let remove = document.getElementById("btn1")
 // heading1[1].innerText = "Cusotmized heading";
 
 // query selectors
-
 let box = document.querySelectorAll('.box');
-
 box.forEach(element => {
 console.log(element)
 button.addEventListener('click', function(){
@@ -43,19 +41,71 @@ button.addEventListener('click', function(){
 remove.addEventListener('click', function(){
     element.style.background = "none"
 })
-
 })
 
-// getting the inputs of user from input fields
+// getting the inputs values of user from input fields
 
 let f_name = document.getElementById('f_name');
 let l_name = document.getElementById('l_name');
 let email = document.getElementById('email');
 let submit = document.getElementById('submit');
 
+
+// let f_name_print = document.getElementById('f_name_print');
+// let l_name_print = document.getElementById('l_name_print');
+// let email_print = document.getElementById('email_print');
+  
+// console.log(f_name_print,l_name_print, email_print)
+
 submit.addEventListener('click' , function(event){
-    event.preventDefault()
-    document.write(f_name.value, l_name.value, email.value)
-})
+
+    // event.preventDefault()
+    // document.write(f_name.value, l_name.value, email.value)
+    // console.log(f_name.value, l_name.value, email.value)
+
+// f_name_print.innerText = f_name.value;
+// l_name_print.innerText = l_name.value;
+// email_print.innerText = email.value;
+    
+// converting user data into object
+let person_data = {
+    f_name : f_name.value,
+    l_name : l_name.value,
+    email : email.value,
+}
+// console.log(person_data);
+
+// converting object into JSON
+
+let user_json =  JSON.stringify(person_data);
+console.log(user_json)
+
+// sending the data in local storage
+
+let success =  localStorage.setItem('user' , user_json);
+
+// retrieve data from local storage
+let get_data_json = localStorage.getItem('user');
+
+
+// converting JSON into object
+
+let user_object = JSON.parse(get_data_json);
+console.log(user_object.f_name);
+
+document.getElementById('tbl_fname').innerText = user_object.f_name; 
+
+
+
+
+});
+
+
+
+
+
+
+
+
 
 
