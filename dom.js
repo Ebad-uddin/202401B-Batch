@@ -46,7 +46,7 @@ remove.addEventListener('click', function(){
 // getting the inputs values of user from input fields
 
 let f_name = document.getElementById('f_name');
-let l_name = document.getElementById('l_name');
+let password = document.getElementById('password');
 let email = document.getElementById('email');
 let submit = document.getElementById('submit');
 
@@ -70,7 +70,7 @@ submit.addEventListener('click' , function(event){
 // converting user data into object
 let person_data = {
     f_name : f_name.value,
-    l_name : l_name.value,
+    password : password.value,
     email : email.value,
 }
 // console.log(person_data);
@@ -89,17 +89,19 @@ let get_data_json = localStorage.getItem('user');
 
 
 // converting JSON into object
-
 let user_object = JSON.parse(get_data_json);
 console.log(user_object.f_name);
 
+
 document.getElementById('tbl_fname').innerText = user_object.f_name; 
-
-
+document.getElementById('tbl_lname').innerText = user_object.password; 
+document.getElementById('tbl_email').innerText = user_object.email; 
 
 
 });
 
+
+// sessionStorage.setItem('name' , 'Ebad');
 
 
 
